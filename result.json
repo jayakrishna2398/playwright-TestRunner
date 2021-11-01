@@ -1,0 +1,74 @@
+{
+    "config": {
+        "forbidOnly": false,
+        "globalSetup": null,
+        "globalTeardown": null,
+        "globalTimeout": 0,
+        "grep": {},
+        "grepInvert": null,
+        "maxFailures": 0,
+        "preserveOutput": "always",
+        "projects": [{
+            "outputDir": "E:/playwright TestRunner/test-results",
+            "repeatEach": 1,
+            "retries": 0,
+            "name": "",
+            "testDir": "E:/playwright TestRunner",
+            "testIgnore": [],
+            "testMatch": [
+                "**/?(*.)@(spec|test).@(ts|js|mjs)"
+            ],
+            "timeout": 30000
+        }],
+        "reporter": [
+            [
+                "json"
+            ],
+            [
+                "dot"
+            ]
+        ],
+        "reportSlowTests": {
+            "max": 5,
+            "threshold": 15000
+        },
+        "rootDir": "E:/playwright TestRunner",
+        "quiet": false,
+        "shard": null,
+        "updateSnapshots": "missing",
+        "version": "1.16.2",
+        "workers": 2,
+        "webServer": null
+    },
+    "suites": [{
+        "title": "test\\first.test.ts",
+        "file": "test/first.test.ts",
+        "line": 0,
+        "column": 0,
+        "specs": [{
+            "title": "first simple test using playwright test runner",
+            "ok": true,
+            "tags": [],
+            "tests": [{
+                "timeout": 30000,
+                "annotations": [],
+                "expectedStatus": "passed",
+                "projectName": "",
+                "results": [{
+                    "workerIndex": 0,
+                    "status": "passed",
+                    "duration": 4999,
+                    "stdout": [],
+                    "stderr": [],
+                    "retry": 0,
+                    "attachments": []
+                }],
+                "status": "expected"
+            }],
+            "file": "test/first.test.ts",
+            "line": 3,
+            "column": 1
+        }]
+    }],
+    "errors": []
+}

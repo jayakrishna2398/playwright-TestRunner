@@ -1,0 +1,19 @@
+{
+    "name": "playwright-testrunner",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "npx playwright test"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "typescript": "4.4.4",
+        "ts-node": "10.4.0",
+        "playwright": "1.16.2",
+        "@playwright/test": "1.16.2"
+
+    }
+}
