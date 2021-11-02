@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "visual.test.ts"
+          "github.test.ts"
         ],
         "timeout": 30000
       }
@@ -41,20 +41,20 @@
     "rootDir": "E:/playwright TestRunner",
     "quiet": false,
     "shard": null,
-    "updateSnapshots": "all",
+    "updateSnapshots": "missing",
     "version": "1.16.2",
     "workers": 2,
     "webServer": null
   },
   "suites": [
     {
-      "title": "visual-comparision\\visual.test.ts",
-      "file": "visual-comparision/visual.test.ts",
+      "title": "test\\github.test.ts",
+      "file": "test/github.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "visual comparision",
+          "title": "locator",
           "ok": true,
           "tags": [],
           "tests": [
@@ -67,28 +67,17 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 4716,
+                  "duration": 7025,
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "E:\\playwright TestRunner\\test-results\\visual-comparision-visual-visual-comparision\\15df99bd5d85da91fc838c5f422b2d0f.webm"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "E:\\playwright TestRunner\\test-results\\visual-comparision-visual-visual-comparision\\test-finished-1.png"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "visual-comparision/visual.test.ts",
+          "file": "test/github.test.ts",
           "line": 3,
           "column": 1
         }
