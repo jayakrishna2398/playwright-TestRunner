@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "tc001.test.ts"
+          "visual.test.ts"
         ],
         "timeout": 30000
       }
@@ -41,94 +41,56 @@
     "rootDir": "E:/playwright TestRunner",
     "quiet": false,
     "shard": null,
-    "updateSnapshots": "missing",
+    "updateSnapshots": "all",
     "version": "1.16.2",
     "workers": 2,
     "webServer": null
   },
   "suites": [
     {
-      "title": "test\\tc001.test.ts",
-      "file": "test/tc001.test.ts",
+      "title": "visual-comparision\\visual.test.ts",
+      "file": "visual-comparision/visual.test.ts",
       "line": 0,
       "column": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "TC001 login",
-          "file": "test/tc001.test.ts",
-          "line": 11,
-          "column": 6,
-          "specs": [
+          "title": "visual comparision",
+          "ok": true,
+          "tags": [],
+          "tests": [
             {
-              "title": "Login positive",
-              "ok": true,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "",
-                  "results": [
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 4716,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
                     {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 16530,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "E:\\playwright TestRunner\\test-results\\test-tc001-TC001-login-Login-positive\\test-finished-1.png"
-                        }
-                      ]
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "E:\\playwright TestRunner\\test-results\\visual-comparision-visual-visual-comparision\\15df99bd5d85da91fc838c5f422b2d0f.webm"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\playwright TestRunner\\test-results\\visual-comparision-visual-visual-comparision\\test-finished-1.png"
                     }
-                  ],
-                  "status": "expected"
+                  ]
                 }
               ],
-              "file": "test/tc001.test.ts",
-              "line": 27,
-              "column": 5
-            },
-            {
-              "title": "first simple test using playwright test runner",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "passed",
-                      "duration": 4957,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "E:\\playwright TestRunner\\test-results\\test-tc001-TC001-login-first-simple-test-using-playwright-test-runner\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "file": "test/tc001.test.ts",
-              "line": 39,
-              "column": 5
+              "status": "expected"
             }
-          ]
+          ],
+          "file": "visual-comparision/visual.test.ts",
+          "line": 3,
+          "column": 1
         }
       ]
     }

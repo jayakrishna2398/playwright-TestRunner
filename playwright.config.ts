@@ -7,7 +7,7 @@ const config: PlaywrightTestConfig = {
             screenshot: "on",
             video: "on"
         },
-        testMatch: ["tc001.test.ts"],
+        testMatch: ["visual.test.ts"],
         retries: 0,     //*whatever test failed it will rerun that failed test*//
         reporter: [["dot"],["json" , {outputFile: "test-result.json"}]]
 
