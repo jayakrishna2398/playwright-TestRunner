@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "github.test.ts"
+          "**.test.ts"
         ],
         "timeout": 30000
       }
@@ -48,6 +48,79 @@
   },
   "suites": [
     {
+      "title": "test\\first.test.ts",
+      "file": "test/first.test.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "group test",
+          "file": "test/first.test.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
+            {
+              "title": "first simple test using playwright test runner",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 6026,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "test/first.test.ts",
+              "line": 8,
+              "column": 1
+            },
+            {
+              "title": "open demoblaze and login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 3145,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "test/first.test.ts",
+              "line": 13,
+              "column": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
       "title": "test\\github.test.ts",
       "file": "test/github.test.ts",
       "line": 0,
@@ -65,9 +138,9 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 0,
+                  "workerIndex": 1,
                   "status": "passed",
-                  "duration": 7025,
+                  "duration": 26359,
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
@@ -78,6 +151,179 @@
             }
           ],
           "file": "test/github.test.ts",
+          "line": 3,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "test\\shadow.test.ts",
+      "file": "test/shadow.test.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [
+        {
+          "title": "shadow DOM",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 16400,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "test/shadow.test.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "Another feature",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 4280,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "test/shadow.test.ts",
+          "line": 9,
+          "column": 1
+        }
+      ]
+    },
+    {
+      "title": "test\\tc001.test.ts",
+      "file": "test/tc001.test.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "TC001 login",
+          "file": "test/tc001.test.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Login positive",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 20030,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "test/tc001.test.ts",
+              "line": 27,
+              "column": 5
+            },
+            {
+              "title": "first simple test using playwright test runner",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 4995,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "test/tc001.test.ts",
+              "line": 39,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "visual-comparision\\visual.test.ts",
+      "file": "visual-comparision/visual.test.ts",
+      "line": 0,
+      "column": 0,
+      "specs": [
+        {
+          "title": "visual comparision",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 4986,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "visual-comparision/visual.test.ts",
           "line": 3,
           "column": 1
         }
