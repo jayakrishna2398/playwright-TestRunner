@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "canvas.test.ts"
+          "auth.ts"
         ],
         "timeout": 30000
       }
@@ -48,38 +48,47 @@
   },
   "suites": [
     {
-      "title": "preserve authenticated state\\canvas.test.ts",
-      "file": "preserve authenticated state/canvas.test.ts",
+      "title": "Http\\auth.ts",
+      "file": "Http/auth.ts",
       "line": 0,
       "column": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "login skip",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "Network - playwright",
+          "file": "Http/auth.ts",
+          "line": 3,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "",
-              "results": [
+              "title": "HTTP authentication",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 6332,
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": []
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "status": "passed",
+                      "duration": 6729,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "file": "Http/auth.ts",
+              "line": 4,
+              "column": 5
             }
-          ],
-          "file": "preserve authenticated state/canvas.test.ts",
-          "line": 3,
-          "column": 1
+          ]
         }
       ]
     }
