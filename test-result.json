@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "myTest.test.ts"
+          "test.ts"
         ],
         "timeout": 30000
       }
@@ -48,13 +48,13 @@
   },
   "suites": [
     {
-      "title": "fixtures\\myTest.test.ts",
-      "file": "fixtures/myTest.test.ts",
+      "title": "fixtures\\test.ts",
+      "file": "fixtures/test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "My test 1",
+          "title": "test 1",
           "ok": true,
           "tags": [],
           "tests": [
@@ -67,25 +67,58 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 44,
-                  "stdout": [
-                    {
-                      "text": "I AM A HUMAN\n"
-                    },
-                    {
-                      "text": "status:  passed\n"
-                    }
-                  ],
+                  "duration": 20118,
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": []
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\playwright TestRunner\\test-results\\fixtures-test.ts-test-1\\trace.zip"
+                    }
+                  ]
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "fixtures/myTest.test.ts",
-          "line": 3,
+          "file": "fixtures/test.ts",
+          "line": 6,
+          "column": 1
+        },
+        {
+          "title": "test2",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 4785,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "E:\\playwright TestRunner\\test-results\\fixtures-test.ts-test2\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "fixtures/test.ts",
+          "line": 18,
           "column": 1
         }
       ]
