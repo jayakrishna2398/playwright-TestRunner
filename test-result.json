@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "test.ts"
+          "visual.test.ts"
         ],
         "timeout": 30000
       }
@@ -48,14 +48,14 @@
   },
   "suites": [
     {
-      "title": "fixtures\\test.ts",
-      "file": "fixtures/test.ts",
+      "title": "visual-comparision\\visual.test.ts",
+      "file": "visual-comparision/visual.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "test 1",
-          "ok": true,
+          "title": "visual comparision",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -66,59 +66,38 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 20118,
+                  "status": "timedOut",
+                  "duration": 34007,
+                  "error": {
+                    "value": "Pending operations:\n  - page.pause at visual-comparision\\visual.test.ts:5:16\n\n"
+                  },
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "attachments": [
                     {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "E:\\playwright TestRunner\\test-results\\fixtures-test.ts-test-1\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "file": "fixtures/test.ts",
-          "line": 6,
-          "column": 1
-        },
-        {
-          "title": "test2",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 4785,
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": [
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "E:\\playwright TestRunner\\test-results\\visual-comparision-visual-visual-comparision\\217fa956383e52db70077065b7703e20.webm"
+                    },
                     {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "E:\\playwright TestRunner\\test-results\\fixtures-test.ts-test2\\trace.zip"
+                      "path": "E:\\playwright TestRunner\\test-results\\visual-comparision-visual-visual-comparision\\trace.zip"
+                    },
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\playwright TestRunner\\test-results\\visual-comparision-visual-visual-comparision\\test-failed-1.png"
                     }
                   ]
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "file": "fixtures/test.ts",
-          "line": 18,
+          "file": "visual-comparision/visual.test.ts",
+          "line": 3,
           "column": 1
         }
       ]
