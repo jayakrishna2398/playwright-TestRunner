@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "UIverification.test.ts"
+          "test.ts"
         ],
         "timeout": 30000
       }
@@ -32,6 +32,10 @@
         {
           "outputFile": "test-result.json"
         }
+      ],
+      [
+        "E:\\playwright TestRunner\\node_modules\\experimental-allure-playwright\\dist\\index.js",
+        null
       ]
     ],
     "reportSlowTests": {
@@ -48,100 +52,95 @@
   },
   "suites": [
     {
-      "title": "UI verification\\UIverification.test.ts",
-      "file": "UI verification/UIverification.test.ts",
+      "title": "fixtures\\test.ts",
+      "file": "fixtures/test.ts",
       "line": 0,
       "column": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "Basic UI verification",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "Test grouping",
+          "file": "fixtures/test.ts",
+          "line": 4,
+          "column": 14,
+          "specs": [
             {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "skipped",
-              "projectName": "",
-              "results": [
+              "title": "test 1",
+              "ok": false,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "status": "skipped",
-                  "duration": 0,
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": []
-                }
-              ],
-              "status": "skipped"
-            }
-          ],
-          "file": "UI verification/UIverification.test.ts",
-          "line": 3,
-          "column": 6
-        },
-        {
-          "title": "UI verifications of buttons",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "skipped",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "skipped",
-                  "duration": 0,
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": []
-                }
-              ],
-              "status": "skipped"
-            }
-          ],
-          "file": "UI verification/UIverification.test.ts",
-          "line": 14,
-          "column": 6
-        },
-        {
-          "title": "UI using radio buttons",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 11878,
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": [
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
                     {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "E:\\playwright TestRunner\\test-results\\UI verification-UIverification-UI-using-radio-buttons\\trace.zip"
+                      "workerIndex": 0,
+                      "status": "timedOut",
+                      "duration": 34318,
+                      "error": {
+                        "value": "Pending operations:\n  - elementHandle.click at Page\\Header.page.ts:27:20\n\n"
+                      },
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "E:\\playwright TestRunner\\test-results\\fixtures-test.ts-Test-grouping-test-1\\trace.zip"
+                        },
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\playwright TestRunner\\test-results\\fixtures-test.ts-Test-grouping-test-1\\test-failed-1.png"
+                        }
+                      ]
                     }
-                  ]
+                  ],
+                  "status": "unexpected"
                 }
               ],
-              "status": "expected"
+              "file": "fixtures/test.ts",
+              "line": 7,
+              "column": 1
+            },
+            {
+              "title": "test2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectName": "",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "status": "passed",
+                      "duration": 6713,
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "E:\\playwright TestRunner\\test-results\\fixtures-test.ts-Test-grouping-test2\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "file": "fixtures/test.ts",
+              "line": 19,
+              "column": 1
             }
-          ],
-          "file": "UI verification/UIverification.test.ts",
-          "line": 23,
-          "column": 1
+          ]
         }
       ]
     }

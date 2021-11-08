@@ -1,0 +1,79 @@
+{
+  "files": [
+    {
+      "fileId": "3afbb62a29704d04fd27459073ae372321bb90b4",
+      "fileName": "UI verification/UIverification.test.ts",
+      "tests": [
+        {
+          "testId": "3afbb62a29704d04fd27459073ae372321bb90b4-d53910bd1b1876f1abbfc660fab8eedd3accb212",
+          "title": "Basic UI verification",
+          "projectName": "",
+          "location": {
+            "file": "UI verification/UIverification.test.ts",
+            "line": 3,
+            "column": 1
+          },
+          "duration": 15250,
+          "outcome": "expected",
+          "path": [
+            "UI verification/UIverification.test.ts:3"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "3afbb62a29704d04fd27459073ae372321bb90b4-17472ab8a1396a957df91efa96fcef0d72b1aec5",
+          "title": "UI verifications of buttons",
+          "projectName": "",
+          "location": {
+            "file": "UI verification/UIverification.test.ts",
+            "line": 14,
+            "column": 1
+          },
+          "duration": 7387,
+          "outcome": "expected",
+          "path": [
+            "UI verification/UIverification.test.ts:14"
+          ],
+          "ok": true
+        },
+        {
+          "testId": "3afbb62a29704d04fd27459073ae372321bb90b4-a011d86355c34621589d3131387f05ff276dad3f",
+          "title": "UI using radio buttons",
+          "projectName": "",
+          "location": {
+            "file": "UI verification/UIverification.test.ts",
+            "line": 24,
+            "column": 1
+          },
+          "duration": 10531,
+          "outcome": "expected",
+          "path": [
+            "UI verification/UIverification.test.ts:24"
+          ],
+          "ok": true
+        }
+      ],
+      "stats": {
+        "total": 3,
+        "expected": 3,
+        "unexpected": 0,
+        "flaky": 0,
+        "skipped": 0,
+        "ok": true,
+        "duration": 33168
+      }
+    }
+  ],
+  "projectNames": [
+    ""
+  ],
+  "stats": {
+    "total": 3,
+    "expected": 3,
+    "unexpected": 0,
+    "flaky": 0,
+    "skipped": 0,
+    "ok": true,
+    "duration": 33168
+  }
+}

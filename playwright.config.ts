@@ -3,15 +3,15 @@ import{chromium, PlaywrightTestConfig} from "@playwright/test";
 const config: PlaywrightTestConfig = {
         use:{
             headless: false,
-            channel: "chrome",
-            screenshot: "off",
+            channel: "chromium",
+            screenshot: "on",
             video: "off",
-            trace: "off"
+            trace: "retain-on-failure"
             //slowMo: "1000"   //This will slow down the execution while testing
         },
-        testMatch: ["UIverification.test.ts"],
+        testMatch: ["test.ts"],
         retries: 0,     //*whatever test failed it will rerun that failed test*//
-        reporter: [["list"],["json" , {outputFile: "test-result.json"}]]
+        reporter: [["list"],["json" , {outputFile: "test-result.json"}],['experimental-allure-playwright']]
 
 }
 export default config;

@@ -1,6 +1,7 @@
 import test,{expect} from "./basePages"
 
 import * as data from "../test/data/login.cred.json";
+        test.describe("Test grouping", ()=>{
 
 
 test("test 1", async({commonFunctions,headerPage,loginPage,page})=>{
@@ -19,4 +20,5 @@ test("test2", async({page})=> {
         await page.goto("https://demoblaze.com/");
         const title = await page.title();
         expect(title).toBe("STORE");
+})
 })
