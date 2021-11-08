@@ -4,9 +4,9 @@ const config: PlaywrightTestConfig = {
         use:{
             headless: false,
             channel: "chrome",
-            screenshot: "only-on-failure",
-            video: "retain-on-failure",
-            trace: "on"
+            screenshot: "off",
+            video: "off",
+            trace: "off"
             //slowMo: "1000"   //This will slow down the execution while testing
         },
         testMatch: ["UIverification.test.ts"],
