@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "visual.test.ts"
+          "UIverification.test.ts"
         ],
         "timeout": 30000
       }
@@ -48,14 +48,70 @@
   },
   "suites": [
     {
-      "title": "visual-comparision\\visual.test.ts",
-      "file": "visual-comparision/visual.test.ts",
+      "title": "UI verification\\UIverification.test.ts",
+      "file": "UI verification/UIverification.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "visual comparision",
-          "ok": false,
+          "title": "Basic UI verification",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "skipped",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "file": "UI verification/UIverification.test.ts",
+          "line": 3,
+          "column": 6
+        },
+        {
+          "title": "UI verifications of buttons",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "skipped",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "skipped",
+                  "duration": 0,
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "file": "UI verification/UIverification.test.ts",
+          "line": 14,
+          "column": 6
+        },
+        {
+          "title": "UI using radio buttons",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -66,38 +122,25 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 34007,
-                  "error": {
-                    "value": "Pending operations:\n  - page.pause at visual-comparision\\visual.test.ts:5:16\n\n"
-                  },
+                  "status": "passed",
+                  "duration": 11878,
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "attachments": [
                     {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "E:\\playwright TestRunner\\test-results\\visual-comparision-visual-visual-comparision\\217fa956383e52db70077065b7703e20.webm"
-                    },
-                    {
                       "name": "trace",
                       "contentType": "application/zip",
-                      "path": "E:\\playwright TestRunner\\test-results\\visual-comparision-visual-visual-comparision\\trace.zip"
-                    },
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "E:\\playwright TestRunner\\test-results\\visual-comparision-visual-visual-comparision\\test-failed-1.png"
+                      "path": "E:\\playwright TestRunner\\test-results\\UI verification-UIverification-UI-using-radio-buttons\\trace.zip"
                     }
                   ]
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "file": "visual-comparision/visual.test.ts",
-          "line": 3,
+          "file": "UI verification/UIverification.test.ts",
+          "line": 23,
           "column": 1
         }
       ]
