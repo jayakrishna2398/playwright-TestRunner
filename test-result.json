@@ -4,7 +4,10 @@
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
-    "grep": {},
+    "grep": [
+      {},
+      {}
+    ],
     "grepInvert": null,
     "maxFailures": 0,
     "preserveOutput": "always",
@@ -17,7 +20,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "test.ts"
+          "tag.test.ts"
         ],
         "timeout": 30000
       }
@@ -52,95 +55,130 @@
   },
   "suites": [
     {
-      "title": "fixtures\\test.ts",
-      "file": "fixtures/test.ts",
+      "title": "grep feature\\tag.test.ts",
+      "file": "grep feature/tag.test.ts",
       "line": 0,
       "column": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Test grouping",
-          "file": "fixtures/test.ts",
-          "line": 4,
-          "column": 14,
-          "specs": [
+          "title": "Testing the sign Up page @smoke",
+          "ok": true,
+          "tags": [
+            "smoke"
+          ],
+          "tests": [
             {
-              "title": "test 1",
-              "ok": false,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "",
-                  "results": [
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 3101,
+                  "stdout": [
                     {
-                      "workerIndex": 0,
-                      "status": "timedOut",
-                      "duration": 34318,
-                      "error": {
-                        "value": "Pending operations:\n  - elementHandle.click at Page\\Header.page.ts:27:20\n\n"
-                      },
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "E:\\playwright TestRunner\\test-results\\fixtures-test.ts-Test-grouping-test-1\\trace.zip"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "E:\\playwright TestRunner\\test-results\\fixtures-test.ts-Test-grouping-test-1\\test-failed-1.png"
-                        }
-                      ]
+                      "text": "Testing the sign Up page @smoke\n"
                     }
                   ],
-                  "status": "unexpected"
-                }
-              ],
-              "file": "fixtures/test.ts",
-              "line": 7,
-              "column": 1
-            },
-            {
-              "title": "test2",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "",
-                  "results": [
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
                     {
-                      "workerIndex": 1,
-                      "status": "passed",
-                      "duration": 6713,
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "E:\\playwright TestRunner\\test-results\\fixtures-test.ts-Test-grouping-test2\\test-finished-1.png"
-                        }
-                      ]
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\playwright TestRunner\\test-results\\grep feature-tag-Testing-the-sign-Up-page-smoke\\test-finished-1.png"
                     }
-                  ],
-                  "status": "expected"
+                  ]
                 }
               ],
-              "file": "fixtures/test.ts",
-              "line": 19,
-              "column": 1
+              "status": "expected"
             }
-          ]
+          ],
+          "file": "grep feature/tag.test.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "Testing the sign in page @sanity",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 0,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "file": "grep feature/tag.test.ts",
+          "line": 7,
+          "column": 1
+        },
+        {
+          "title": "Testing the log in page @reg",
+          "ok": true,
+          "tags": [
+            "reg"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1289,
+                  "stdout": [
+                    {
+                      "text": "Testing the sign Up page @smoke\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "E:\\playwright TestRunner\\test-results\\grep feature-tag-Testing-the-log-in-page-reg\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "grep feature/tag.test.ts",
+          "line": 11,
+          "column": 1
+        },
+        {
+          "title": "Testing the sign Up page @sanity",
+          "ok": true,
+          "tags": [
+            "sanity"
+          ],
+          "tests": [
+            {
+              "timeout": 0,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [],
+              "status": "skipped"
+            }
+          ],
+          "file": "grep feature/tag.test.ts",
+          "line": 15,
+          "column": 1
         }
       ]
     }
