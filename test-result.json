@@ -4,10 +4,7 @@
     "globalSetup": null,
     "globalTeardown": null,
     "globalTimeout": 0,
-    "grep": [
-      {},
-      {}
-    ],
+    "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
     "preserveOutput": "always",
@@ -20,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "tag.test.ts"
+          "youtube.test.ts"
         ],
         "timeout": 30000
       }
@@ -55,17 +52,15 @@
   },
   "suites": [
     {
-      "title": "grep feature\\tag.test.ts",
-      "file": "grep feature/tag.test.ts",
+      "title": "web scrapping\\youtube.test.ts",
+      "file": "web scrapping/youtube.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Testing the sign Up page @smoke",
+          "title": "scrapping of data in youtube playlist1636608001261",
           "ok": true,
-          "tags": [
-            "smoke"
-          ],
+          "tags": [],
           "tests": [
             {
               "timeout": 30000,
@@ -76,10 +71,16 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 3101,
+                  "duration": 11553,
                   "stdout": [
                     {
-                      "text": "Testing the sign Up page @smoke\n"
+                      "text": "\u001b[33m74\u001b[39m\n"
+                    },
+                    {
+                      "text": "\u001b[33m1133.1666666666663\u001b[39m\n"
+                    },
+                    {
+                      "text": "18h 53m 9s\n"
                     }
                   ],
                   "stderr": [],
@@ -88,7 +89,7 @@
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "E:\\playwright TestRunner\\test-results\\grep feature-tag-Testing-the-sign-Up-page-smoke\\test-finished-1.png"
+                      "path": "E:\\playwright TestRunner\\test-results\\web scrapping-youtube-scrapping-of-data-in-youtube-playlist1636608002219\\test-finished-1.png"
                     }
                   ]
                 }
@@ -96,36 +97,14 @@
               "status": "expected"
             }
           ],
-          "file": "grep feature/tag.test.ts",
-          "line": 3,
-          "column": 1
+          "file": "web scrapping/youtube.test.ts",
+          "line": 6,
+          "column": 9
         },
         {
-          "title": "Testing the sign in page @sanity",
+          "title": "scrapping of data in youtube playlist1636608001276",
           "ok": true,
-          "tags": [
-            "sanity"
-          ],
-          "tests": [
-            {
-              "timeout": 0,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "file": "grep feature/tag.test.ts",
-          "line": 7,
-          "column": 1
-        },
-        {
-          "title": "Testing the log in page @reg",
-          "ok": true,
-          "tags": [
-            "reg"
-          ],
+          "tags": [],
           "tests": [
             {
               "timeout": 30000,
@@ -136,10 +115,16 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 1289,
+                  "duration": 11009,
                   "stdout": [
                     {
-                      "text": "Testing the sign Up page @smoke\n"
+                      "text": "\u001b[33m62\u001b[39m\n"
+                    },
+                    {
+                      "text": "\u001b[33m844.5499999999997\u001b[39m\n"
+                    },
+                    {
+                      "text": "14h 4m 32s\n"
                     }
                   ],
                   "stderr": [],
@@ -148,7 +133,7 @@
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "E:\\playwright TestRunner\\test-results\\grep feature-tag-Testing-the-log-in-page-reg\\test-finished-1.png"
+                      "path": "E:\\playwright TestRunner\\test-results\\web scrapping-youtube-scrapping-of-data-in-youtube-playlist1636608002225\\test-finished-1.png"
                     }
                   ]
                 }
@@ -156,29 +141,9 @@
               "status": "expected"
             }
           ],
-          "file": "grep feature/tag.test.ts",
-          "line": 11,
-          "column": 1
-        },
-        {
-          "title": "Testing the sign Up page @sanity",
-          "ok": true,
-          "tags": [
-            "sanity"
-          ],
-          "tests": [
-            {
-              "timeout": 0,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "",
-              "results": [],
-              "status": "skipped"
-            }
-          ],
-          "file": "grep feature/tag.test.ts",
-          "line": 15,
-          "column": 1
+          "file": "web scrapping/youtube.test.ts",
+          "line": 6,
+          "column": 9
         }
       ]
     }
