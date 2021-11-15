@@ -17,9 +17,9 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "apiResponse.test.ts"
+          "indeed.test.ts"
         ],
-        "timeout": 5000
+        "timeout": 30000
       }
     ],
     "reporter": [
@@ -48,18 +48,18 @@
   },
   "suites": [
     {
-      "title": "Api response\\apiResponse.test.ts",
-      "file": "Api response/apiResponse.test.ts",
+      "title": "web scrapping\\indeed.test.ts",
+      "file": "web scrapping/indeed.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "API response",
+          "title": "scrapping data from indeed.com",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 15000,
+              "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectName": "",
@@ -67,10 +67,10 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 8765,
+                  "duration": 8366,
                   "stdout": [
                     {
-                      "text": "{\n  login: \u001b[32m'jayakrishna2398'\u001b[39m,\n  id: \u001b[33m54092992\u001b[39m,\n  node_id: \u001b[32m'MDQ6VXNlcjU0MDkyOTky'\u001b[39m,\n  avatar_url: \u001b[32m'https://avatars.githubusercontent.com/u/54092992?v=4'\u001b[39m,\n  gravatar_id: \u001b[32m''\u001b[39m,\n  url: \u001b[32m'https://api.github.com/users/jayakrishna2398'\u001b[39m,\n  html_url: \u001b[32m'https://github.com/jayakrishna2398'\u001b[39m,\n  followers_url: \u001b[32m'https://api.github.com/users/jayakrishna2398/followers'\u001b[39m,\n  following_url: \u001b[32m'https://api.github.com/users/jayakrishna2398/following{/other_user}'\u001b[39m,\n  gists_url: \u001b[32m'https://api.github.com/users/jayakrishna2398/gists{/gist_id}'\u001b[39m,\n  starred_url: \u001b[32m'https://api.github.com/users/jayakrishna2398/starred{/owner}{/repo}'\u001b[39m,\n  subscriptions_url: \u001b[32m'https://api.github.com/users/jayakrishna2398/subscriptions'\u001b[39m,\n  organizations_url: \u001b[32m'https://api.github.com/users/jayakrishna2398/orgs'\u001b[39m,\n  repos_url: \u001b[32m'https://api.github.com/users/jayakrishna2398/repos'\u001b[39m,\n  events_url: \u001b[32m'https://api.github.com/users/jayakrishna2398/events{/privacy}'\u001b[39m,\n  received_events_url: \u001b[32m'https://api.github.com/users/jayakrishna2398/received_events'\u001b[39m,\n  type: \u001b[32m'User'\u001b[39m,\n  site_admin: \u001b[33mfalse\u001b[39m,\n  name: \u001b[1mnull\u001b[22m,\n  company: \u001b[1mnull\u001b[22m,\n  blog: \u001b[32m''\u001b[39m,\n  location: \u001b[1mnull\u001b[22m,\n  email: \u001b[1mnull\u001b[22m,\n  hireable: \u001b[1mnull\u001b[22m,\n  bio: \u001b[1mnull\u001b[22m,\n  twitter_username: \u001b[1mnull\u001b[22m,\n  public_repos: \u001b[33m18\u001b[39m,\n  public_gists: \u001b[33m0\u001b[39m,\n  followers: \u001b[33m0\u001b[39m,\n  following: \u001b[33m1\u001b[39m,\n  created_at: \u001b[32m'2019-08-14T04:52:06Z'\u001b[39m,\n  updated_at: \u001b[32m'2021-11-15T08:35:13Z'\u001b[39m\n}\n"
+                      "text": "The location is: 8\n"
                     }
                   ],
                   "stderr": [],
@@ -81,7 +81,7 @@
               "status": "expected"
             }
           ],
-          "file": "Api response/apiResponse.test.ts",
+          "file": "web scrapping/indeed.test.ts",
           "line": 3,
           "column": 1
         }
