@@ -14,7 +14,7 @@ const config: PlaywrightTestConfig = {
         //grep:[new RegExp("@smoke"), new RegExp("@reg")],   //It will execute @smoke and @reg in tag.test.ts
         //grepInvert:[new RegExp("@smoke")],
         timeout: 5000,               //It will execute other than @smoke tests
-        testMatch: ["annotations.test.ts"],
+        testMatch: ["apiResponse.test.ts"],
         retries: 0,     //*whatever test failed it will rerun that failed test*//
         reporter: [["list"],["json" , {outputFile: "test-result.json"}]]
 
