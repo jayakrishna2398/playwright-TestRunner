@@ -17,9 +17,9 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "youtube.test.ts"
+          "annotations.test.ts"
         ],
-        "timeout": 30000
+        "timeout": 5000
       }
     ],
     "reporter": [
@@ -32,10 +32,6 @@
         {
           "outputFile": "test-result.json"
         }
-      ],
-      [
-        "E:\\playwright TestRunner\\node_modules\\experimental-allure-playwright\\dist\\index.js",
-        null
       ]
     ],
     "reportSlowTests": {
@@ -52,62 +48,57 @@
   },
   "suites": [
     {
-      "title": "web scrapping\\youtube.test.ts",
-      "file": "web scrapping/youtube.test.ts",
+      "title": "annotations\\annotations.test.ts",
+      "file": "annotations/annotations.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "scrapping of data in youtube playlist1636608001261",
+          "title": "test case 1",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
-              "annotations": [],
+              "timeout": 15000,
+              "annotations": [
+                {
+                  "type": "slow"
+                }
+              ],
               "expectedStatus": "passed",
               "projectName": "",
               "results": [
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 11553,
+                  "duration": 8638,
                   "stdout": [
                     {
-                      "text": "\u001b[33m74\u001b[39m\n"
+                      "text": "test case running\n"
                     },
                     {
-                      "text": "\u001b[33m1133.1666666666663\u001b[39m\n"
-                    },
-                    {
-                      "text": "18h 53m 9s\n"
+                      "text": "first Test completed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "E:\\playwright TestRunner\\test-results\\web scrapping-youtube-scrapping-of-data-in-youtube-playlist1636608002219\\test-finished-1.png"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "web scrapping/youtube.test.ts",
-          "line": 6,
-          "column": 9
+          "file": "annotations/annotations.test.ts",
+          "line": 3,
+          "column": 1
         },
         {
-          "title": "scrapping of data in youtube playlist1636608001276",
+          "title": "test case 2",
           "ok": true,
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 5000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectName": "",
@@ -115,35 +106,65 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 11009,
+                  "duration": 1414,
                   "stdout": [
                     {
-                      "text": "\u001b[33m62\u001b[39m\n"
+                      "text": "test case running\n"
                     },
                     {
-                      "text": "\u001b[33m844.5499999999997\u001b[39m\n"
-                    },
-                    {
-                      "text": "14h 4m 32s\n"
+                      "text": "second Test completed\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "E:\\playwright TestRunner\\test-results\\web scrapping-youtube-scrapping-of-data-in-youtube-playlist1636608002225\\test-finished-1.png"
-                    }
-                  ]
+                  "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "web scrapping/youtube.test.ts",
-          "line": 6,
-          "column": 9
+          "file": "annotations/annotations.test.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "test case 3",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 5000,
+              "annotations": [
+                {
+                  "type": "fixme"
+                }
+              ],
+              "expectedStatus": "skipped",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "skipped",
+                  "duration": 453,
+                  "stdout": [
+                    {
+                      "text": "test case running\n"
+                    },
+                    {
+                      "text": "Name is: chromium\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": []
+                }
+              ],
+              "status": "skipped"
+            }
+          ],
+          "file": "annotations/annotations.test.ts",
+          "line": 18,
+          "column": 1
         }
       ]
     }
