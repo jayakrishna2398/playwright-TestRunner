@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "test.ts"
+          "elementVsLocator.test.ts"
         ],
         "timeout": 30000
       }
@@ -32,10 +32,6 @@
         {
           "outputFile": "test-result.json"
         }
-      ],
-      [
-        "E:\\playwright TestRunner\\node_modules\\experimental-allure-playwright\\dist\\index.js",
-        null
       ]
     ],
     "reportSlowTests": {
@@ -52,94 +48,81 @@
   },
   "suites": [
     {
-      "title": "fixtures\\test.ts",
-      "file": "fixtures/test.ts",
+      "title": "test\\elementVsLocator.test.ts",
+      "file": "test/elementVsLocator.test.ts",
       "line": 0,
       "column": 0,
-      "specs": [],
-      "suites": [
+      "specs": [
         {
-          "title": "Test grouping",
-          "file": "fixtures/test.ts",
-          "line": 7,
-          "column": 14,
-          "specs": [
+          "title": "Element handle",
+          "ok": false,
+          "tags": [],
+          "tests": [
             {
-              "title": "test 1",
-              "ok": false,
-              "tags": [],
-              "tests": [
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
                 {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectName": "",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "status": "timedOut",
-                      "duration": 33831,
-                      "error": {
-                        "message": "Pending operations:\n  - page.waitForSelector at Page\\common.page.ts:11:36\n\npage.waitForSelector: Target closed\n=========================== logs ===========================\nwaiting for selector \"//div[@aria-label='Welcome Jayakrishna Thirunavarrasu']\" to be visible\n============================================================",
-                        "stack": "Pending operations:\n  - page.waitForSelector at Page\\common.page.ts:11:36\n\npage.waitForSelector: Target closed\n=========================== logs ===========================\nwaiting for selector \"//div[@aria-label='Welcome Jayakrishna Thirunavarrasu']\" to be visible\n============================================================\n    at CommonFunctions.get toaster [as toaster] (E:\\playwright TestRunner\\Page\\common.page.ts:11:36)\n    at E:\\playwright TestRunner\\fixtures\\test.ts:31:55\n    at E:\\playwright TestRunner\\fixtures\\test.ts:24:9\n    at E:\\playwright TestRunner\\fixtures\\test.ts:23:1"
-                      },
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "Login",
-                          "duration": 17085
-                        },
-                        {
-                          "title": "search for",
-                          "duration": 0
-                        },
-                        {
-                          "title": "the fails scenario",
-                          "duration": 13446,
-                          "error": {
-                            "message": "page.waitForSelector: Target closed\n=========================== logs ===========================\nwaiting for selector \"//div[@aria-label='Welcome Jayakrishna Thirunavarrasu']\" to be visible\n============================================================",
-                            "stack": "page.waitForSelector: Target closed\n=========================== logs ===========================\nwaiting for selector \"//div[@aria-label='Welcome Jayakrishna Thirunavarrasu']\" to be visible\n============================================================\n    at CommonFunctions.get toaster [as toaster] (E:\\playwright TestRunner\\Page\\common.page.ts:11:36)\n    at E:\\playwright TestRunner\\fixtures\\test.ts:31:55\n    at E:\\playwright TestRunner\\fixtures\\test.ts:24:9\n    at E:\\playwright TestRunner\\fixtures\\test.ts:23:1"
-                          },
-                          "steps": [
-                            {
-                              "title": "Login",
-                              "duration": 13446,
-                              "error": {
-                                "message": "page.waitForSelector: Target closed\n=========================== logs ===========================\nwaiting for selector \"//div[@aria-label='Welcome Jayakrishna Thirunavarrasu']\" to be visible\n============================================================",
-                                "stack": "page.waitForSelector: Target closed\n=========================== logs ===========================\nwaiting for selector \"//div[@aria-label='Welcome Jayakrishna Thirunavarrasu']\" to be visible\n============================================================\n    at CommonFunctions.get toaster [as toaster] (E:\\playwright TestRunner\\Page\\common.page.ts:11:36)\n    at E:\\playwright TestRunner\\fixtures\\test.ts:31:55\n    at E:\\playwright TestRunner\\fixtures\\test.ts:24:9\n    at E:\\playwright TestRunner\\fixtures\\test.ts:23:1"
-                              }
-                            }
-                          ]
-                        }
-                      ],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "E:\\playwright TestRunner\\test-results\\fixtures-test.ts-Test-grouping-test-1\\trace.zip"
-                        },
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "E:\\playwright TestRunner\\test-results\\fixtures-test.ts-Test-grouping-test-1\\test-failed-1.png"
-                        }
-                      ],
-                      "errorLocation": {
-                        "column": 55,
-                        "line": 31
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 4447,
+                  "error": {
+                    "message": "locator.fill: Error: strict mode violation: \"input\" resolved to 6 elements:\n    1) <input value=\"2860\" type=\"hidden\" name=\"jazoest\" autoco…/> aka playwright.$(\"input[name=\"jazoest\"]\")\n    2) <input name=\"lsd\" type=\"hidden\" autocomplete=\"off\" valu…/> aka playwright.$(\"input[name=\"lsd\"]\")\n    3) <input id=\"email\" type=\"text\" name=\"email\" autofocus=\"1…/> aka playwright.$(\"[data-testid=\"royal_email\"]\")\n    4) <input id=\"pass\" name=\"pass\" type=\"password\" aria-label…/> aka playwright.$(\"[data-testid=\"royal_pass\"]\")\n    5) <input type=\"hidden\" autocomplete=\"off\" name=\"login_sou…/> aka playwright.$(\"input[name=\"login_source\"]\")\n    6) <input value=\"\" name=\"next\" type=\"hidden\" autocomplete=…/> aka playwright.$(\"input[name=\"next\"]\")\n\n=========================== logs ===========================\nwaiting for selector \"input\"\n  strict mode violation: \"input\" resolved to 6 elements:\n    1) <input value=\"2860\" type=\"hidden\" name=\"jazoest\" autoco…/> aka playwright.$(\"input[name=\"jazoest\"]\")\n    2) <input name=\"lsd\" type=\"hidden\" autocomplete=\"off\" valu…/> aka playwright.$(\"input[name=\"lsd\"]\")\n    3) <input id=\"email\" type=\"text\" name=\"email\" autofocus=\"1…/> aka playwright.$(\"[data-testid=\"royal_email\"]\")\n    4) <input id=\"pass\" name=\"pass\" type=\"password\" aria-label…/> aka playwright.$(\"[data-testid=\"royal_pass\"]\")\n    5) <input type=\"hidden\" autocomplete=\"off\" name=\"login_sou…/> aka playwright.$(\"input[name=\"login_source\"]\")\n    6) <input value=\"\" name=\"next\" type=\"hidden\" autocomplete=…/> aka playwright.$(\"input[name=\"next\"]\")\n\n============================================================",
+                    "stack": "locator.fill: Error: strict mode violation: \"input\" resolved to 6 elements:\n    1) <input value=\"2860\" type=\"hidden\" name=\"jazoest\" autoco…/> aka playwright.$(\"input[name=\"jazoest\"]\")\n    2) <input name=\"lsd\" type=\"hidden\" autocomplete=\"off\" valu…/> aka playwright.$(\"input[name=\"lsd\"]\")\n    3) <input id=\"email\" type=\"text\" name=\"email\" autofocus=\"1…/> aka playwright.$(\"[data-testid=\"royal_email\"]\")\n    4) <input id=\"pass\" name=\"pass\" type=\"password\" aria-label…/> aka playwright.$(\"[data-testid=\"royal_pass\"]\")\n    5) <input type=\"hidden\" autocomplete=\"off\" name=\"login_sou…/> aka playwright.$(\"input[name=\"login_source\"]\")\n    6) <input value=\"\" name=\"next\" type=\"hidden\" autocomplete=…/> aka playwright.$(\"input[name=\"next\"]\")\n\n=========================== logs ===========================\nwaiting for selector \"input\"\n  strict mode violation: \"input\" resolved to 6 elements:\n    1) <input value=\"2860\" type=\"hidden\" name=\"jazoest\" autoco…/> aka playwright.$(\"input[name=\"jazoest\"]\")\n    2) <input name=\"lsd\" type=\"hidden\" autocomplete=\"off\" valu…/> aka playwright.$(\"input[name=\"lsd\"]\")\n    3) <input id=\"email\" type=\"text\" name=\"email\" autofocus=\"1…/> aka playwright.$(\"[data-testid=\"royal_email\"]\")\n    4) <input id=\"pass\" name=\"pass\" type=\"password\" aria-label…/> aka playwright.$(\"[data-testid=\"royal_pass\"]\")\n    5) <input type=\"hidden\" autocomplete=\"off\" name=\"login_sou…/> aka playwright.$(\"input[name=\"login_source\"]\")\n    6) <input value=\"\" name=\"next\" type=\"hidden\" autocomplete=…/> aka playwright.$(\"input[name=\"next\"]\")\n\n============================================================\n    at E:\\playwright TestRunner\\test\\elementVsLocator.test.ts:6:19"
+                  },
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": [],
+                  "errorLocation": {
+                    "column": 19,
+                    "line": 6
+                  }
                 }
               ],
-              "file": "fixtures/test.ts",
-              "line": 9,
-              "column": 1
+              "status": "unexpected"
             }
-          ]
+          ],
+          "file": "test/elementVsLocator.test.ts",
+          "line": 3,
+          "column": 1
+        },
+        {
+          "title": "Locator API",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 9088,
+                  "stdout": [
+                    {
+                      "text": "\u001b[33m18\u001b[39m\n"
+                    },
+                    {
+                      "text": "[\n  \u001b[32m'https://github.com/jayakrishna2398/BankingApplicatio-n'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/charity-user-ms'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/charityapp-api-jayakrishna'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/charityapp-core'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/charityapp-springboot-api'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/charitytrust-api-jayakrishna'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/demoBlaze-project'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/flipkart-app'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/github-demo'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/git_practice'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/HomePractice'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/Playwright-Jest'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/playwright-TestRunner'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/quizApp'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/Tester'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/Threads'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/Training-programs'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/week3SERVLET'\u001b[39m\n]\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "file": "test/elementVsLocator.test.ts",
+          "line": 9,
+          "column": 1
         }
       ]
     }
