@@ -1,4 +1,5 @@
 import {test} from "@playwright/test";
+import * as data from "./login.cred.json";
 
 test("API login response check", async({page})=>{
     await page.goto("https://letcode.in/signin");
@@ -10,8 +11,8 @@ test("API login response check", async({page})=>{
             res.url() == "https://letcode.in/signin"
             
         ),
-        await page.fill("input[name='email']", "jayakrishna2398@gmail.com"),
-        await page.fill("input[placeholder='Enter password']", ""),
+        await page.fill("input[name='email']", data.email),
+        await page.fill("input[placeholder='Enter password']", data.pass),
         await page.click("//button[text()='LOGIN']")
         ])
         console.log(await response.json());
