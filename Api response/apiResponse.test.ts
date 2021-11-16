@@ -1,7 +1,6 @@
 import {test} from "@playwright/test";
 
 test("API response", async({page})=>{
-     test.setTimeout(15000)
     await page.goto("https://letcode.in/elements");
 
     const [response] = await Promise.all([

@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "indeed.test.ts"
+          "loginApi.test.ts"
         ],
         "timeout": 30000
       }
@@ -48,14 +48,14 @@
   },
   "suites": [
     {
-      "title": "web scrapping\\indeed.test.ts",
-      "file": "web scrapping/indeed.test.ts",
+      "title": "Api response\\loginApi.test.ts",
+      "file": "Api response/loginApi.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "scrapping data from indeed.com",
-          "ok": true,
+          "title": "API login response check",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -66,22 +66,26 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 8366,
-                  "stdout": [
-                    {
-                      "text": "The location is: 8\n"
-                    }
-                  ],
+                  "status": "timedOut",
+                  "duration": 30231,
+                  "error": {
+                    "message": "page.waitForResponse: Page closed",
+                    "stack": "page.waitForResponse: Page closed\n    at E:\\playwright TestRunner\\Api response\\loginApi.test.ts:7:15"
+                  },
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": []
+                  "attachments": [],
+                  "errorLocation": {
+                    "column": 15,
+                    "line": 7
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "file": "web scrapping/indeed.test.ts",
+          "file": "Api response/loginApi.test.ts",
           "line": 3,
           "column": 1
         }
