@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "texts.test.ts"
+          "mobile.test.ts"
         ],
         "timeout": 30000
       }
@@ -32,6 +32,10 @@
         {
           "outputFile": "test-result.json"
         }
+      ],
+      [
+        "E:\\playwright TestRunner\\node_modules\\experimental-allure-playwright\\dist\\index.js",
+        null
       ]
     ],
     "reportSlowTests": {
@@ -48,13 +52,13 @@
   },
   "suites": [
     {
-      "title": "all texts\\texts.test.ts",
-      "file": "all texts/texts.test.ts",
+      "title": "test\\mobile.test.ts",
+      "file": "test/mobile.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "All texts difference",
+          "title": "Run in Android - Chrome",
           "ok": true,
           "tags": [],
           "tests": [
@@ -67,42 +71,28 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 2914,
+                  "duration": 21904,
                   "stdout": [
                     {
-                      "text": "Inner HTML is: hey <strong>there</strong> <span>Am I visible?</span>\n"
+                      "text": "Model: SM-M315F\n"
                     },
                     {
-                      "text": "Inner text is: hey <strong>there</strong> <span>Am I visible?</span>\n"
+                      "text": "Serial: RZ8R4051ANB\n"
                     },
                     {
-                      "text": "Text content is: hey <strong>there</strong> <span>Am I visible?</span>\n"
+                      "text": "https://letcode.in/\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "steps": [
-                    {
-                      "title": "Inner HTML",
-                      "duration": 933
-                    },
-                    {
-                      "title": "Inner text HTML",
-                      "duration": 216
-                    },
-                    {
-                      "title": "Text context",
-                      "duration": 67
-                    }
-                  ],
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "all texts/texts.test.ts",
-          "line": 3,
+          "file": "test/mobile.test.ts",
+          "line": 4,
           "column": 1
         }
       ]
