@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "elementVsLocator.test.ts"
+          "texts.test.ts"
         ],
         "timeout": 30000
       }
@@ -48,49 +48,13 @@
   },
   "suites": [
     {
-      "title": "test\\elementVsLocator.test.ts",
-      "file": "test/elementVsLocator.test.ts",
+      "title": "all texts\\texts.test.ts",
+      "file": "all texts/texts.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Element handle",
-          "ok": false,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectName": "",
-              "results": [
-                {
-                  "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 4447,
-                  "error": {
-                    "message": "locator.fill: Error: strict mode violation: \"input\" resolved to 6 elements:\n    1) <input value=\"2860\" type=\"hidden\" name=\"jazoest\" autoco…/> aka playwright.$(\"input[name=\"jazoest\"]\")\n    2) <input name=\"lsd\" type=\"hidden\" autocomplete=\"off\" valu…/> aka playwright.$(\"input[name=\"lsd\"]\")\n    3) <input id=\"email\" type=\"text\" name=\"email\" autofocus=\"1…/> aka playwright.$(\"[data-testid=\"royal_email\"]\")\n    4) <input id=\"pass\" name=\"pass\" type=\"password\" aria-label…/> aka playwright.$(\"[data-testid=\"royal_pass\"]\")\n    5) <input type=\"hidden\" autocomplete=\"off\" name=\"login_sou…/> aka playwright.$(\"input[name=\"login_source\"]\")\n    6) <input value=\"\" name=\"next\" type=\"hidden\" autocomplete=…/> aka playwright.$(\"input[name=\"next\"]\")\n\n=========================== logs ===========================\nwaiting for selector \"input\"\n  strict mode violation: \"input\" resolved to 6 elements:\n    1) <input value=\"2860\" type=\"hidden\" name=\"jazoest\" autoco…/> aka playwright.$(\"input[name=\"jazoest\"]\")\n    2) <input name=\"lsd\" type=\"hidden\" autocomplete=\"off\" valu…/> aka playwright.$(\"input[name=\"lsd\"]\")\n    3) <input id=\"email\" type=\"text\" name=\"email\" autofocus=\"1…/> aka playwright.$(\"[data-testid=\"royal_email\"]\")\n    4) <input id=\"pass\" name=\"pass\" type=\"password\" aria-label…/> aka playwright.$(\"[data-testid=\"royal_pass\"]\")\n    5) <input type=\"hidden\" autocomplete=\"off\" name=\"login_sou…/> aka playwright.$(\"input[name=\"login_source\"]\")\n    6) <input value=\"\" name=\"next\" type=\"hidden\" autocomplete=…/> aka playwright.$(\"input[name=\"next\"]\")\n\n============================================================",
-                    "stack": "locator.fill: Error: strict mode violation: \"input\" resolved to 6 elements:\n    1) <input value=\"2860\" type=\"hidden\" name=\"jazoest\" autoco…/> aka playwright.$(\"input[name=\"jazoest\"]\")\n    2) <input name=\"lsd\" type=\"hidden\" autocomplete=\"off\" valu…/> aka playwright.$(\"input[name=\"lsd\"]\")\n    3) <input id=\"email\" type=\"text\" name=\"email\" autofocus=\"1…/> aka playwright.$(\"[data-testid=\"royal_email\"]\")\n    4) <input id=\"pass\" name=\"pass\" type=\"password\" aria-label…/> aka playwright.$(\"[data-testid=\"royal_pass\"]\")\n    5) <input type=\"hidden\" autocomplete=\"off\" name=\"login_sou…/> aka playwright.$(\"input[name=\"login_source\"]\")\n    6) <input value=\"\" name=\"next\" type=\"hidden\" autocomplete=…/> aka playwright.$(\"input[name=\"next\"]\")\n\n=========================== logs ===========================\nwaiting for selector \"input\"\n  strict mode violation: \"input\" resolved to 6 elements:\n    1) <input value=\"2860\" type=\"hidden\" name=\"jazoest\" autoco…/> aka playwright.$(\"input[name=\"jazoest\"]\")\n    2) <input name=\"lsd\" type=\"hidden\" autocomplete=\"off\" valu…/> aka playwright.$(\"input[name=\"lsd\"]\")\n    3) <input id=\"email\" type=\"text\" name=\"email\" autofocus=\"1…/> aka playwright.$(\"[data-testid=\"royal_email\"]\")\n    4) <input id=\"pass\" name=\"pass\" type=\"password\" aria-label…/> aka playwright.$(\"[data-testid=\"royal_pass\"]\")\n    5) <input type=\"hidden\" autocomplete=\"off\" name=\"login_sou…/> aka playwright.$(\"input[name=\"login_source\"]\")\n    6) <input value=\"\" name=\"next\" type=\"hidden\" autocomplete=…/> aka playwright.$(\"input[name=\"next\"]\")\n\n============================================================\n    at E:\\playwright TestRunner\\test\\elementVsLocator.test.ts:6:19"
-                  },
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "attachments": [],
-                  "errorLocation": {
-                    "column": 19,
-                    "line": 6
-                  }
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "file": "test/elementVsLocator.test.ts",
-          "line": 3,
-          "column": 1
-        },
-        {
-          "title": "Locator API",
+          "title": "All texts difference",
           "ok": true,
           "tags": [],
           "tests": [
@@ -101,27 +65,44 @@
               "projectName": "",
               "results": [
                 {
-                  "workerIndex": 1,
+                  "workerIndex": 0,
                   "status": "passed",
-                  "duration": 9088,
+                  "duration": 2914,
                   "stdout": [
                     {
-                      "text": "\u001b[33m18\u001b[39m\n"
+                      "text": "Inner HTML is: hey <strong>there</strong> <span>Am I visible?</span>\n"
                     },
                     {
-                      "text": "[\n  \u001b[32m'https://github.com/jayakrishna2398/BankingApplicatio-n'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/charity-user-ms'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/charityapp-api-jayakrishna'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/charityapp-core'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/charityapp-springboot-api'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/charitytrust-api-jayakrishna'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/demoBlaze-project'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/flipkart-app'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/github-demo'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/git_practice'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/HomePractice'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/Playwright-Jest'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/playwright-TestRunner'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/quizApp'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/Tester'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/Threads'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/Training-programs'\u001b[39m,\n  \u001b[32m'https://github.com/jayakrishna2398/week3SERVLET'\u001b[39m\n]\n"
+                      "text": "Inner text is: hey <strong>there</strong> <span>Am I visible?</span>\n"
+                    },
+                    {
+                      "text": "Text content is: hey <strong>there</strong> <span>Am I visible?</span>\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Inner HTML",
+                      "duration": 933
+                    },
+                    {
+                      "title": "Inner text HTML",
+                      "duration": 216
+                    },
+                    {
+                      "title": "Text context",
+                      "duration": 67
+                    }
+                  ],
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "test/elementVsLocator.test.ts",
-          "line": 9,
+          "file": "all texts/texts.test.ts",
+          "line": 3,
           "column": 1
         }
       ]

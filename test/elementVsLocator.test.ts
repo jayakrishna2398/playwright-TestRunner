@@ -2,7 +2,7 @@ import {test} from "@playwright/test";
 
 test("Element handle", async({page})=>{
     await page.goto("https://www.facebook.com/");              
-    let handle = await page.$("input", {                     //let handle = await page.locator("input")
+    let handle = await page.$("input", {                     //let handle = page.locator("input")
          strict: true                            //(or)      //await handle?.fill("jk")   
     })
     await handle?.fill("jk")
@@ -20,5 +20,5 @@ test("Locator API", async({page}) =>{
 })
 
 //*If we use the "$" element handle,it will lead to failure depending on stricts
-//*To overcome this, we are moving to new element handle called locator,which is no need of using stricts.
+//*To overcome this, we are moving to new element handle called locator,which is highly strict.
 //*At the same time, no need to use await for locator.
