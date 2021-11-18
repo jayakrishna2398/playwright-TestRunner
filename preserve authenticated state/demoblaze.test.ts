@@ -11,3 +11,7 @@ test("login skip", async({browser})=>{
     await page.waitForTimeout(3000);
     await page.click("#logout2");
 })
+
+
+//to store cookies
+//command = npx playwright codegen --save storage=auth.json
