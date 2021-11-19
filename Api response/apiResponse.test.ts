@@ -8,6 +8,11 @@ test("API response", async({page})=>{
         res.status() == 200 
         &&
         res.url() == "https://api.github.com/users/jayakrishna2398"
+        &&
+        res.body().then(b => {
+            console.log(b);
+            return b.includes("jayakrishna2398")
+        })
         ),
         page.fill("input[name='username']", "jayakrishna2398"),
         page.click("button")

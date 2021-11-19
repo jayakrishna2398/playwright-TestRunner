@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "mobile.test.ts"
+          "mobile2.test.ts"
         ],
         "timeout": 30000
       }
@@ -32,10 +32,6 @@
         {
           "outputFile": "test-result.json"
         }
-      ],
-      [
-        "E:\\playwright TestRunner\\node_modules\\experimental-allure-playwright\\dist\\index.js",
-        null
       ]
     ],
     "reportSlowTests": {
@@ -52,8 +48,8 @@
   },
   "suites": [
     {
-      "title": "test\\mobile.test.ts",
-      "file": "test/mobile.test.ts",
+      "title": "test\\mobile2.test.ts",
+      "file": "test/mobile2.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
@@ -71,7 +67,7 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 21904,
+                  "duration": 10764,
                   "stdout": [
                     {
                       "text": "Model: SM-M315F\n"
@@ -80,7 +76,7 @@
                       "text": "Serial: RZ8R4051ANB\n"
                     },
                     {
-                      "text": "https://letcode.in/\n"
+                      "text": "https://demoblaze.com/\n"
                     }
                   ],
                   "stderr": [],
@@ -91,7 +87,7 @@
               "status": "expected"
             }
           ],
-          "file": "test/mobile.test.ts",
+          "file": "test/mobile2.test.ts",
           "line": 4,
           "column": 1
         }
