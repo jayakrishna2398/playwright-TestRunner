@@ -16,7 +16,12 @@ test("Locator API", async({page}) =>{
     await page.waitForSelector("app-gitrepos ol li")
     const repos =  page.locator("app-gitrepos ol li")
     console.log(await repos.count());
-    console.log(await repos.allInnerTexts());
+    //console.log(await repos.allInnerTexts());
+    let c = await repos.count()
+    for(let i=0;i<c;i++){
+        let text = await repos.nth(i).textContent();
+        console.log(text)
+    }
 })
 
 //*If we use the "$" element handle,it will lead to failure depending on stricts
