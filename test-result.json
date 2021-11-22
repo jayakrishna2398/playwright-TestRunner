@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "mobile2.test.ts"
+          "webScrap.test.ts"
         ],
         "timeout": 30000
       }
@@ -48,13 +48,13 @@
   },
   "suites": [
     {
-      "title": "test\\mobile2.test.ts",
-      "file": "test/mobile2.test.ts",
+      "title": "test\\webScrap.test.ts",
+      "file": "test/webScrap.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Run in Android - Chrome",
+          "title": "Amazon price notification",
           "ok": true,
           "tags": [],
           "tests": [
@@ -67,16 +67,10 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 10764,
+                  "duration": 16818,
                   "stdout": [
                     {
-                      "text": "Model: SM-M315F\n"
-                    },
-                    {
-                      "text": "Serial: RZ8R4051ANB\n"
-                    },
-                    {
-                      "text": "https://demoblaze.com/\n"
+                      "text": "25,990.00\n"
                     }
                   ],
                   "stderr": [],
@@ -87,8 +81,8 @@
               "status": "expected"
             }
           ],
-          "file": "test/mobile2.test.ts",
-          "line": 4,
+          "file": "test/webScrap.test.ts",
+          "line": 7,
           "column": 1
         }
       ]
