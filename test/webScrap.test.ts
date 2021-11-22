@@ -13,15 +13,15 @@ test("Amazon price notification", async({page})=>{
 })
     function sendEmailNotification(currentPrice: string){
         const transporter = nodeMailer.createTransport({
-            service: "gmail",
-        auth:{
-            user: auth.cookies,
-            pass: auth.cookies
-        }
+        sendmail: true,
+        newline: 'windows',
+        logger: false
     })
     transporter.sendMail({
-        from: auth.cookies,
-        to: "ravikrishna8900@gmail.com",
+        from: '',
+
+        // Comma separated list of recipients
+        to: '',
         subject:'Amazon price notification',
         text: `The price of the product ${url} has dropped to ${currentPrice}`,
         html: `<p>The price of the product has dropped to ${currentPrice}</p><a href =${url} >open this link<a>`

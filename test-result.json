@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "playLogger.test.ts"
+          "webScrap.test.ts"
         ],
         "timeout": 30000
       }
@@ -42,20 +42,21 @@
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.16.2",
+    "version": "1.17.0-rc1",
     "workers": 2,
-    "webServer": null
+    "webServer": null,
+    "__testGroupsCount": 1
   },
   "suites": [
     {
-      "title": "logger\\playLogger.test.ts",
-      "file": "logger/playLogger.test.ts",
+      "title": "test\\webScrap.test.ts",
+      "file": "test/webScrap.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "logger",
-          "ok": false,
+          "title": "Amazon price notification",
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -66,40 +67,26 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "timedOut",
-                  "duration": 31212,
-                  "error": {
-                    "message": "Pending operations:\n  - page.goto at logger\\playLogger.test.ts:19:16\n\npage.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://amazon.in/aadads\", waiting until \"load\"\n============================================================",
-                    "stack": "Pending operations:\n  - page.goto at logger\\playLogger.test.ts:19:16\n\npage.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://amazon.in/aadads\", waiting until \"load\"\n============================================================\n    at E:\\playwright TestRunner\\logger\\playLogger.test.ts:19:16"
-                  },
+                  "status": "passed",
+                  "duration": 12551,
                   "stdout": [
                     {
-                      "text": "Failed to load resource: the server responded with a status of 404 ()\n"
+                      "text": "25,990.00\n"
                     },
                     {
-                      "text": "Failed to load resource: net::ERR_TOO_MANY_REDIRECTS\n"
-                    },
-                    {
-                      "text": "Failed to load resource: net::ERR_TOO_MANY_REDIRECTS\n"
-                    },
-                    {
-                      "text": "Failed to load resource: the server responded with a status of 404 ()\n"
+                      "text": "Error: spawn sendmail ENOENT\n\u001b[90m    at Process.ChildProcess._handle.onexit (internal/child_process.js:274:19)\u001b[39m\n\u001b[90m    at onErrorNT (internal/child_process.js:469:16)\u001b[39m\n\u001b[90m    at processTicksAndRejections (internal/process/task_queues.js:82:21)\u001b[39m {\n  errno: \u001b[33m-4058\u001b[39m,\n  code: \u001b[32m'ENOENT'\u001b[39m,\n  syscall: \u001b[32m'spawn sendmail'\u001b[39m,\n  path: \u001b[32m'sendmail'\u001b[39m,\n  spawnargs: [\n    \u001b[32m'-i'\u001b[39m,\n    \u001b[32m'-f'\u001b[39m,\n    \u001b[32m'ravikrishna8900@gmail.com'\u001b[39m,\n    \u001b[32m'jayakrishnaarasu34@gmail.com'\u001b[39m\n  ]\n}\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": [],
-                  "errorLocation": {
-                    "column": 16,
-                    "line": 19
-                  }
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
-          "file": "logger/playLogger.test.ts",
-          "line": 3,
+          "file": "test/webScrap.test.ts",
+          "line": 7,
           "column": 1
         }
       ]
