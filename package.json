@@ -11,7 +11,8 @@
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "@playwright/test": "1.16.2",
+        "@playwright/test": "^1.17.0-rc1",
+        "@types/nodemailer": "^6.4.4",
         "experimental-allure-playwright": "0.0.3",
         "playwright": "1.16.2",
         "ts-node": "10.4.0",

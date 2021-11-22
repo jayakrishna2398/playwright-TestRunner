@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "webScrap.test.ts"
+          "playLogger.test.ts"
         ],
         "timeout": 30000
       }
@@ -48,14 +48,14 @@
   },
   "suites": [
     {
-      "title": "test\\webScrap.test.ts",
-      "file": "test/webScrap.test.ts",
+      "title": "logger\\playLogger.test.ts",
+      "file": "logger/playLogger.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Amazon price notification",
-          "ok": true,
+          "title": "logger",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -66,23 +66,40 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "passed",
-                  "duration": 16818,
+                  "status": "timedOut",
+                  "duration": 31212,
+                  "error": {
+                    "message": "Pending operations:\n  - page.goto at logger\\playLogger.test.ts:19:16\n\npage.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://amazon.in/aadads\", waiting until \"load\"\n============================================================",
+                    "stack": "Pending operations:\n  - page.goto at logger\\playLogger.test.ts:19:16\n\npage.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://amazon.in/aadads\", waiting until \"load\"\n============================================================\n    at E:\\playwright TestRunner\\logger\\playLogger.test.ts:19:16"
+                  },
                   "stdout": [
                     {
-                      "text": "25,990.00\n"
+                      "text": "Failed to load resource: the server responded with a status of 404 ()\n"
+                    },
+                    {
+                      "text": "Failed to load resource: net::ERR_TOO_MANY_REDIRECTS\n"
+                    },
+                    {
+                      "text": "Failed to load resource: net::ERR_TOO_MANY_REDIRECTS\n"
+                    },
+                    {
+                      "text": "Failed to load resource: the server responded with a status of 404 ()\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "attachments": []
+                  "attachments": [],
+                  "errorLocation": {
+                    "column": 16,
+                    "line": 19
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "file": "test/webScrap.test.ts",
-          "line": 7,
+          "file": "logger/playLogger.test.ts",
+          "line": 3,
           "column": 1
         }
       ]
