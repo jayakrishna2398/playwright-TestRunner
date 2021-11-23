@@ -17,7 +17,7 @@
         "testDir": "E:/playwright TestRunner",
         "testIgnore": [],
         "testMatch": [
-          "webScrap.test.ts"
+          "waitForAlert.test.ts"
         ],
         "timeout": 30000
       }
@@ -42,20 +42,19 @@
     "quiet": false,
     "shard": null,
     "updateSnapshots": "missing",
-    "version": "1.17.0-rc1",
+    "version": "1.16.3",
     "workers": 2,
-    "webServer": null,
-    "__testGroupsCount": 1
+    "webServer": null
   },
   "suites": [
     {
-      "title": "test\\webScrap.test.ts",
-      "file": "test/webScrap.test.ts",
+      "title": "test\\waitForAlert.test.ts",
+      "file": "test/waitForAlert.test.ts",
       "line": 0,
       "column": 0,
       "specs": [
         {
-          "title": "Amazon price notification",
+          "title": "wait for alert",
           "ok": true,
           "tags": [],
           "tests": [
@@ -68,25 +67,32 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 12551,
+                  "duration": 19138,
                   "stdout": [
                     {
-                      "text": "25,990.00\n"
-                    },
-                    {
-                      "text": "Error: spawn sendmail ENOENT\n\u001b[90m    at Process.ChildProcess._handle.onexit (internal/child_process.js:274:19)\u001b[39m\n\u001b[90m    at onErrorNT (internal/child_process.js:469:16)\u001b[39m\n\u001b[90m    at processTicksAndRejections (internal/process/task_queues.js:82:21)\u001b[39m {\n  errno: \u001b[33m-4058\u001b[39m,\n  code: \u001b[32m'ENOENT'\u001b[39m,\n  syscall: \u001b[32m'spawn sendmail'\u001b[39m,\n  path: \u001b[32m'sendmail'\u001b[39m,\n  spawnargs: [\n    \u001b[32m'-i'\u001b[39m,\n    \u001b[32m'-f'\u001b[39m,\n    \u001b[32m'ravikrishna8900@gmail.com'\u001b[39m,\n    \u001b[32m'jayakrishnaarasu34@gmail.com'\u001b[39m\n  ]\n}\n"
+                      "text": "Alert message: Finally I'm here, just to say Hi :)\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Alert",
+                      "duration": 9756
+                    },
+                    {
+                      "title": "Alert",
+                      "duration": 0
+                    }
+                  ],
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "file": "test/webScrap.test.ts",
-          "line": 7,
+          "file": "test/waitForAlert.test.ts",
+          "line": 3,
           "column": 1
         }
       ]
