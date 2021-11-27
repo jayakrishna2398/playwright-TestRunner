@@ -11,17 +11,20 @@ test("Amazon price notification", async({page})=>{
     console.log(currentPrice)
     sendEmailNotification(currentPrice)
 })
-    function sendEmailNotification(currentPrice: string){
+    function sendEmailNotification(currentPrice: string | undefined){
+        const { MY_EMAIL, MY_PASS } = process.env;
+        console.log(MY_EMAIL, MY_PASS);
         const transporter = nodeMailer.createTransport({
-        sendmail: true,
-        newline: 'windows',
-        logger: false
+            auth: {
+                user: MY_EMAIL,
+                pass: MY_PASS
+            }
     })
     transporter.sendMail({
-        from: '',
+        from: 'MY_EMAIL',
 
         // Comma separated list of recipients
-        to: '',
+        to: 'jayakrishnaarasu34@gmail.com',
         subject:'Amazon price notification',
         text: `The price of the product ${url} has dropped to ${currentPrice}`,
         html: `<p>The price of the product has dropped to ${currentPrice}</p><a href =${url} >open this link<a>`
