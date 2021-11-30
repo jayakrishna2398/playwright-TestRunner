@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+export const __esModule = true;
 var config = {
     use: {
         headless: false,
@@ -13,6 +13,9 @@ var config = {
     //grepInvert:[new RegExp("@smoke")],            //It will execute other than @smoke tests
     testMatch: ["mobile.test.ts"],
     retries: 0,
-    reporter: [["list"], ["json", { outputFile: "test-result.json" }]]
+    reporter: [
+        ["list"],
+        ["json", { outputFile: "test-result.json" }]
+    ]
 };
 exports["default"] = config;
